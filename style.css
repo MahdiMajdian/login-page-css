@@ -40,6 +40,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: WorkSans-Bold;
+}
+a {
+  text-decoration: none;
+  color: #c1d5bb;
+}
+li {
+  list-style: none;
 }
 .container {
   width: 100%;
@@ -49,8 +57,10 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-p {
+div {
+  display: flex;
+}
+p:nth-child(1) {
   font-family: "WorkSans-Bold";
   font-size: 2rem;
   color: #333;
@@ -76,19 +86,52 @@ input::placeholder {
 }
 .input-user {
   margin: 1rem;
-  width: 20%;
+  width: 25%;
   padding: 8px;
   border-bottom: 2px solid #ddd;
 }
 .input-pass {
   margin: 1rem;
-  width: 20%;
+  width: 25%;
   padding: 8px;
   border-bottom: 2px solid #ddd;
 }
+.input-submit {
+  width: 25%;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  margin: 1.5rem 0;
+  background-color: #6fb554;
+  box-shadow: 1px 0px 10px #3f682f7e;
+}
+#submit {
+  background-color: #6fb554;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+}
 
-#submit{
-    background-color: greenyellow;
-    width: 25%;
-    
+.forgot {
+  display: flex;
+  flex-direction: row;
+}
+
+.forgot > a {
+  font-size: 0.8rem;
+  color: #c1d4bc;
+}
+.forgot > p {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.signup > a {
+  font-size: 0.8rem;
+  color: #c1d4bc;
+}
+.signup > p {
+  font-size: 0.8rem;
+  color: #bbb;
 }
