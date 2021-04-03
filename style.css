@@ -46,7 +46,6 @@ body {
 div {
   display: flex;
 }
-
 .container {
   display: flex;
   background-color: #eceef0;
@@ -56,19 +55,19 @@ div {
   align-items: center;
 }
 .box {
-  width: 25rem;
-  height: 20rem;
+  width: 31.25rem;
+  height: 25rem;
   background-color: white;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   display: inline;
 }
 .header {
-  border-radius: 0.4rem 0.4rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   height: 35%;
   width: 100%;
   background-image: url(images/background.jpg);
   background-size: 100%;
-  background-position: top;
+  background-position: bottom;
   position: relative;
 }
 .header-content {
@@ -81,12 +80,12 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #63747c8f;
+  background: #63747cb9;
 }
 .header-content > p {
   color: white;
   font-family: WorkSans-Bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .form {
   width: 100%;
@@ -97,11 +96,11 @@ div {
 }
 input {
   outline: none;
-  width: 70%;
+  width: 65%;
   border: none;
   background-color: transparent;
-  font-size: 0.6rem;
-  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  padding: 0.8rem 0;
 }
 input::placeholder {
   color: #acacac;
@@ -110,7 +109,7 @@ input::placeholder {
   width: 100%;
   padding: 0 0 0 12%;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1.4rem 0 1rem 0;
 }
 .input-pass {
   width: 100%;
@@ -119,18 +118,67 @@ input::placeholder {
 }
 
 .input-user > p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: #a5a5a5;
 }
 .input-pass > p {
   color: #a5a5a5;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .input-user > input {
   margin: 0 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
 }
 .input-pass > input {
   margin: 0 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.login-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  width: 100%;
+  padding-left: 28%;
+  padding-right: 14%;
+}
+
+.login-option > div > label {
+  font-size: 0.7rem;
+  font-family: WorkSans-SemiBold;
+  color: #d2d1d4;
+}
+.login-option > div > a {
+  font-size: 0.7rem;
+  font-family: WorkSans-SemiBold;
+  text-decoration: none;
+  color: #d2d1d4;
+}
+.login-option > div > a:hover {
+  color: #6fb554;
+}
+.forgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgot > input {
+  width: auto;
+  margin: 0 0.2rem;
+}
+.login {
+  width: 25%;
+  height: 2.4rem;
+  align-self: flex-start;
+  margin-left: 26%;
+  background-color: #6fb554;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 2rem;
+}
+.login > p {
+  font-family: WorkSans-SemiBold;
+  font-size: 0.8rem;
 }
