@@ -1,0 +1,94 @@
+/*Start Font Section */
+@font-face {
+  font-family: WorkSans-Thin;
+  src: url(./Work_Sans_font/static/WorkSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Light;
+  src: url(./Work_Sans_font/static/WorkSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Medium;
+  src: url(./Work_Sans_font/static/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Regular;
+  src: url(./Work_Sans_font/static/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-SemiBold;
+  src: url(./Work_Sans_font/static/WorkSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url(./Work_Sans_font/static/WorkSans-Bold.ttf) format("truetype");
+}
+/*End Font Section */
+
+/* CSS Reset */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  font-family: "WorkSans-Bold";
+  font-size: 2rem;
+  color: #333;
+}
+.profile-picture {
+  width: 6rem;
+  height: 6rem;
+  background-image: url(images/avatar.jpg);
+  border-radius: 50%;
+  margin: 3rem 0;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  font-family: WorkSans-SemiBold;
+  color: #666;
+}
+input::placeholder {
+  font-size: 0.8rem;
+  font-family: WorkSans-SemiBold;
+  color: #aaa;
+}
+.input-user {
+  margin: 1rem;
+  width: 20%;
+  padding: 8px;
+  border-bottom: 2px solid #ddd;
+}
+.input-pass {
+  margin: 1rem;
+  width: 20%;
+  padding: 8px;
+  border-bottom: 2px solid #ddd;
+}
+
+#submit{
+    background-color: greenyellow;
+    width: 25%;
+    
+}
