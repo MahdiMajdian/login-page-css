@@ -46,8 +46,15 @@ a {
   text-decoration: none;
   color: #c1d5bb;
 }
-li {
+ul {
   list-style: none;
+}
+
+ul li div::before {
+  content: "\2022";
+  color: #ddd;
+  width: 1em;
+  margin-left: -1em;
 }
 .container {
   width: 100%;
@@ -113,25 +120,31 @@ input::placeholder {
   font-size: 1rem;
 }
 
-.forgot {
+.box-1 {
   display: flex;
-  flex-direction: row;
+  width: 25%;
+  justify-content: flex-start;
+  margin: 7rem 0;
 }
 
 .forgot > a {
+  font-family: WorkSans-Medium;
   font-size: 0.8rem;
   color: #c1d4bc;
 }
 .forgot > p {
+  font-family: WorkSans-Medium;
   font-size: 0.8rem;
   color: #bbb;
 }
 
 .signup > a {
+  font-family: WorkSans-Medium;
   font-size: 0.8rem;
   color: #c1d4bc;
 }
 .signup > p {
+  font-family: WorkSans-Medium;
   font-size: 0.8rem;
   color: #bbb;
 }
