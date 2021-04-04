@@ -1,0 +1,46 @@
+/*Start Font Section */
+@font-face {
+  font-family: WorkSans-Thin;
+  src: url(./Work_Sans_font/static/WorkSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Light;
+  src: url(./Work_Sans_font/static/WorkSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Medium;
+  src: url(./Work_Sans_font/static/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Regular;
+  src: url(./Work_Sans_font/static/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-SemiBold;
+  src: url(./Work_Sans_font/static/WorkSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url(./Work_Sans_font/static/WorkSans-Bold.ttf) format("truetype");
+}
+/*End Font Section */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: WorkSans-Regular;
+}
+div{
+    display: flex;
+}
