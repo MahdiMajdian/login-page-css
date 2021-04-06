@@ -1,0 +1,29 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #719f9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*{
+box-sizing: border-box;
+font-family: WorkSans-Medium;
+}
+div{
+  display: flex;
+}
+
+.box{
+  justify-content: space-between;
+  align-items: center;
+  width: 50rem;
+  height: 40rem;
+  background: linear-gradient(95deg , #1d5961 350px ,#feba33 351px);
+}
+
+.options{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
