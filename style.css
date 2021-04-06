@@ -39,6 +39,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+body {
+  position: relative;
+}
 * {
   box-sizing: border-box;
   font-family: WorkSans-Medium;
@@ -60,11 +63,13 @@ input {
   outline: none;
 }
 .box {
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   width: 50rem;
   height: 35rem;
   border-radius: 5px;
+
   background: linear-gradient(95deg, #1d5961 380px, #feba33 381px);
 }
 
@@ -135,26 +140,27 @@ input {
   border-radius: 2px;
   justify-content: space-around;
 }
-.user>input{
+.user > input {
   width: 100%;
 }
-.pass>input{
+.pass > input {
   width: 100%;
 }
-.hide{
+.hide {
   width: 0.9rem;
   height: 0.9rem;
   background-image: url("images/hide.png");
   background-position: center;
+  cursor: pointer;
   background-size: 100%;
 }
-.user>.hide{
+.user > .hide {
   background-image: none;
 }
-.user>input::placeholder{
-color: #bbb;
+.user > input::placeholder {
+  color: #bbb;
 }
-.pass>input::placeholder{
+.pass > input::placeholder {
   color: #bbb;
 }
 .form-submit {
@@ -165,4 +171,14 @@ color: #bbb;
   border-radius: 2px;
   margin: 1rem;
   color: white;
+}
+
+.overlay {
+  position: absolute;
+  width: 20rem;
+  height: 25rem;
+  left: -11rem;
+  background-color: #ffde2028;
+  filter: blur(500px);
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
 }
