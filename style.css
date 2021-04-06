@@ -1,4 +1,37 @@
-html,body{
+/*Start Font Section */
+@font-face {
+  font-family: WorkSans-Thin;
+  src: url(./Work_Sans_font/static/WorkSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Light;
+  src: url(./Work_Sans_font/static/WorkSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Medium;
+  src: url(./Work_Sans_font/static/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-Regular;
+  src: url(./Work_Sans_font/static/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: WorkSans-SemiBold;
+  src: url(./Work_Sans_font/static/WorkSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url(./Work_Sans_font/static/WorkSans-Bold.ttf) format("truetype");
+}
+/*End Font Section */
+
+html,
+body {
   width: 100%;
   height: 100%;
   background-color: #719f9d;
@@ -6,24 +39,130 @@ html,body{
   justify-content: center;
   align-items: center;
 }
-*{
-box-sizing: border-box;
-font-family: WorkSans-Medium;
+* {
+  box-sizing: border-box;
+  font-family: WorkSans-Medium;
+  margin: 0;
+  padding: 0;
 }
-div{
+div {
   display: flex;
 }
-
-.box{
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: transparent;
+}
+input {
+  border: none;
+  background: none;
+  outline: none;
+}
+.box {
   justify-content: space-between;
   align-items: center;
   width: 50rem;
-  height: 40rem;
-  background: linear-gradient(95deg , #1d5961 350px ,#feba33 351px);
+  height: 35rem;
+  border-radius: 5px;
+  background: linear-gradient(95deg, #1d5961 380px, #feba33 381px);
 }
 
-.options{
+.options {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem 0;
+}
+.left-side {
+  margin: 4rem;
+}
+.right-side {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+.form {
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 65%;
+  height: 45%;
+  border-radius: 0.3rem;
+}
+.form-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  color: #feba33;
+  font-size: 0.8rem;
+  padding: 1.2rem 1rem;
+}
+.form-title > a {
+  color: rgb(143, 143, 143);
+}
+.form-shadow {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(180deg, rgb(223, 223, 223), white);
+}
+
+.options > p {
+  color: white;
+  font-family: WorkSans-Regular;
+}
+.options > a > p {
+  color: #1a535c;
+}
+.form-inputs {
+  flex-direction: column;
+}
+.user {
+  padding: 0.8rem;
+  margin: 0.4rem 1rem;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 2px;
+}
+.pass {
+  padding: 0.8rem;
+  margin: 0.4rem 1rem;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 2px;
+  justify-content: space-around;
+}
+.user>input{
+  width: 100%;
+}
+.pass>input{
+  width: 100%;
+}
+.hide{
+  width: 0.9rem;
+  height: 0.9rem;
+  background-image: url("images/hide.png");
+  background-position: center;
+  background-size: 100%;
+}
+.user>.hide{
+  background-image: none;
+}
+.user>input::placeholder{
+color: #bbb;
+}
+.pass>input::placeholder{
+  color: #bbb;
+}
+.form-submit {
+  cursor: pointer;
+  background-color: #1a535c;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  margin: 1rem;
+  color: white;
 }
